@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #pongGame:hover, #pongGame:active {
-	content: url(../img/pongGameTitle.png);
+	content: url(../img/pongGameTItle.png);
 }
 
 #lineFollowingBot:hover, #lineFollowingBot:active{
