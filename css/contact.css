@@ -1,0 +1,61 @@
+/* ---------------Entire Body----------------*/
+body {
+	
+ /* background: #000000; 
+background: -webkit-linear-gradient(to left, #000000 , #53346D); 
+background: linear-gradient(to left, #000000 , #53346D); */
+        
+	padding: 10px;
+}
+
+#contactBox {
+	color: black;
+	display: block;
+	padding: 30px;
+	margin: 50px auto;
+}
+
+
+#contactBox label {
+	display: block;
+	margin: 5px 0 5px 20px;
+	font: 18px arial;
+}	
+
+#contactBox input {
+	width:300px; 
+	margin: 5px 0 5px 20px;
+	max-width: 90%;
+}
+
+#contactBox input:hover {
+	border: 2px solid red;
+	box-shadow: 10px 10px 10px black;
+}
+
+
+#contactBox .names input { 
+	display: inline-flex;
+	width:200px; 
+ }
+
+#contactBox textarea {
+	width: 70%;
+	margin: 5px 0 5px 20px;
+}
+
+#contactBox textarea:hover{
+	border: 2px solid red;
+	box-shadow: 10px 10px 10px black;
+}
+
+#contactBox fieldset {
+	background:#76D7C4;
+	padding: 20px;
+	box-shadow: 5px 10px 35px black;
+}
+
+#contactBox .btn {
+	width: 125px;
+}
+

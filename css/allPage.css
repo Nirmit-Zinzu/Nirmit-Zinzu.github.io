@@ -1,0 +1,33 @@
+.navigationBar a:hover { 
+  font-size: 1.3em;
+ }
+
+ /* ----------RED line divider in the footer --------- */
+.banner {
+    padding: 210 0 20px 0;
+    margin-bottom: 8;
+    background: url("banner1.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+/* ---------------- Footer ---------------------*/
+
+blockquote p{
+  font-size: 20px;
+  color: #D4E6F1;
+}
+
+.quote {
+  color: #1ABC9C;
+}
+
+.madeBy { 
+
+  font-family: Georgia, serif;
+  font-size: 15px; 
+  color: black;
+  text-align: center;
+  background: #95A5A6;
+}

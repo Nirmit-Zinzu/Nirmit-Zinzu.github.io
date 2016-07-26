@@ -1,93 +1,268 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 
 <html>
 
 	<head>
-		<title>Maze Game</title>
 
+		<title> My Webpage </title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Latest compiled and minified CSS (Bootstrap)-->
 		<link 
 			rel="stylesheet" 
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
 			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+	    
 		<!-- Optional theme -->
-		<link 
+		<!-- <link 
 			rel="stylesheet" 
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+ -->
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
-
-		<link rel="stylesheet" type="text/css" href="../css/projectPage.css">
-		<link rel="stylesheet" type="text/css" href="../css/allPage.css">
+		<!-- ..................... css style ...................... -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">    
+		<link rel="stylesheet" type="text/css" href="css/allPage.css"> 
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
 
 	</head>
 
+
+	<!-- Following body tag contains the information that appears on the screen -->
 	<body>
+		<header>
+			<div class="navigationBar">
+				<nav class="navbar navbar-inverse">
+				  <div class="container-fluid">
 
-	<header>
-		<div class="navigationBar">
-			<nav class="navbar navbar-inverse">
-			  <div class="container-fluid">
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle glyphicon glyphicon-th-list" data-toggle="collapse" data-target="#myNavbar"></button>
-			      <a class="logo navbar-brand"> <img src="../img/logo.png" width="70"></a>
-			      			    
-			    </div>
+				    <div class="navbar-header">
+				      <!-- List Icon button when the screen goes small (Phone)  -->
+				      <button type="button" class="navbar-toggle glyphicon glyphicon-th-list" data-toggle="collapse" data-target="#myNavbar"></button>
+				      <a class="logo navbar-brand"> <img src="img/logo.png" width="70"></a>   <!-- Logo -->
+				   	</div>
 
-			    <div class="collapse navbar-collapse" id="myNavbar">
-			        <ul class="nav navbar-nav">
-						<li class="home"> <a href="../index.html#home"> Home </a></li>
-				        <li class="projects"> <a href="../index.html#projects" > Projects </a></li>
-				        <li class="contact"> <a href="../index.html#contactBox" > Contact </a></li>
-				        <li class="connect"> <a href="../index.html#socialMedia" > Connect </a></li>
-			        </ul>
-			    </div>
-			  </div>
-			</nav>
+				   	<!-- Navigation bar on the top of the screen  -->
+				    <div class="collapse navbar-collapse" id="myNavbar">
+				        <ul class="nav navbar-nav">
+							<!-- <li class="home"> <a href="#" onclick="autoScrollTo('biography');"> Home </a></li>
+					        <li class="projects"> <a href="#" onclick=" autoScrollTo('projects');"> Projects </a></li>
+					        <li class="contact"> <a href="#" onclick="autoScrollTo('contactBox');"> Contact </a></li> 					 
+					        <li class="connect"> <a href="#" onclick=" autoScrollTo('socialMedia');" > Connect </a></li>  -->
+
+							<li class="home"> <a href="#" onclick="moveToDiv('#biography');"> Home </a></li>
+					        <li class="projects"> <a href="#" onclick="moveToDiv('#projects');"> Projects </a></li>
+					        <li class="contact"> <a href="#" onclick="moveToDiv('#contactBox');"> Contact </a></li> 
+					        <li class="connect"> <a href="#" onclick="moveToDiv('#socialMedia');"> Connect </a></li>
+				        </ul>
+				    </div>
+
+				  </div>
+				</nav>
 			</div>
-	
 		</header>
+		
+		<!-- Icon in the bottom-right corner that allows user to scroll to the top  -->
+		<!-- <div id="backToTop"> <a href="#" onclick="resetScroller();" ><img src="img/Back-to-Top.png"></a> </div> -->
+		<div id="backToTop"> <a href="#" onclick="moveToDiv('body');" ><img src="img/Back-to-Top.png"></a> </div>
 
+		<!-- ............ Infomation about myself (Bio) ............ -->
+		<div id="biography">
 
-		<div class="information">
-		</br>
+		<!-- Status Widget Infomation   -->
+			<div class="container"> 
+				
+					<img class="myPicture img-circle col-md-6" src="img/sexy_beast.jpg">   
+					<div class="rightSide col-md-6"> <br>
+						
+						<img class="title" src="img/transparent_text_effect copy.png"> 
 
-			<div class="container">
+						<div class="myPanel">
+							<div class="headBar" id="projectBar"> 
+								<img class="pointDown1" src="img/pointingArrowDown.png" width="30px">
+								 Project 
+								 <img class="pointDown1" src="img/pointingArrowDown.png" width="30px">
+							</div>
+							<div class="info" id="projectInfo"> <p> Developing an app </p> </div>
+
+							<div class="headBar" id="workBar">
+								<img class="pointDown2" src="img/pointingArrowDown.png" width="30px"> 
+								Work 
+								<img class="pointDown2" src="img/pointingArrowDown.png" width="30px"></div>
+							<div class="info" id="workInfo"> <p> Searching for a co-op placement </p> </div>
+
+							<div class="headBar" id="studyBar"> 
+								<img class="pointDown3" src="img/pointingArrowDown.png" width="30px">
+								Study
+								<img class="pointDown3" src="img/pointingArrowDown.png" width="30px">
+								</div>
+							<div class="info" id="studyInfo"> <p> Second year of engineering </p> </div>
+	
+						</div>
+					</div>
+			</div>
 
 			<p>
-				<h1>Maze Game</h1> </br> <br>
-				<h3>Language</h3> - Java </br> </br>
-				<h3>Time</h3> - Grade 12, June 2015 </br> </br>
+				<div class="container well" > 
+			   		<h1><u>About me</u></h1> 
+					My name is <STRONG>Nirmit Zinzuwadia</STRONG>. Currently I am studying Computer Engineering at University of Toronto. I have finished first year and now going to the second semester. 
+					</br> </br>
+					I strive on challenges and enjoy solving critical engineering problems. Developing helpful user-friendly apps is my main passion. I continue to learn and enlarge my knowledge in the field of Computers. 
+					</br> </br>
+					Currently, I am in search of a co-op placement over the summer break. My main aim is to put 'theatrical knowledge into practical'. I strongly want to apply the theoretical concepts learned in the classroom into practice with a work placement. 
+					</br> </br>
+				</div>
+			</p> </br>
 
-				<h3>Description</h3> </br>
-				This is a graphical maze game. The user's task is to get the square piece to the end of the maze. It seems to be an easy task, however, it quite difficult to complete. The square piece moves automatically and it changes speed once in a while. User has to guide it to go in the correct direction using arrow keys. 
-  				</br></br>
-				Moreover, if the user approaches the wall (try to go inside), the piece will get stuck and game will end! To allow the user to complete the course, ten mistakes are allowed. The game will end and restart otherwise.  
-				</br></br>
-				
-				<h3>Vidoe</h3> </br> <br>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/6divNcuSnqs" frameborder="0" allowfullscreen></iframe>
-
-			</p>
-			</div>
 		</div>
 
-		<br><br> <br> 
-		<!-- Black Banner  -->
-		<div class="container"> <div class="banner"> </div> </div>
 
-		<!-- Footer  -->
-		<footer class="bye">
-			<div class="footer">
-				<p> <br> &copy 2016 <br> </p>
-			
-				<script type="text/javascript"> 
-						document.write(Date());
-				</script>
-			
+		<!-- ............... PROJECTS .............. --> 
+		<div id="projects">
+
+			<img class="title" align="center" src="img/projectPortfolio.png">
+
+			<div class="container"> <br> 
+
+				<div class="row">
+
+					<div class="assignment">
+					  	<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <a href="projects/markBookApp.html"> <img id="markBook" class="projectPic" src="img/marks_logo.png"> </a>
+						</div>
+						</div>
+					</div>
+
+					<div class="assignment">
+					  	<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <a href="projects/reversiGame.html"> <img id="reversiGame" class="projectPic" src="img/Reversi.png"> </a>
+						    </div>
+						</div>
+					</div>
+
+					<div class="assignment">
+					  	<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <a href="projects/mazeGame.html"> <img id="mazeGame" class="projectPic" src="img/mazeGame.png"> </a>
+						    </div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="row">
+
+					<div class="assignment">
+				  	<div class="col-sm-4">
+					    <div class="thumbnail">
+					      <a href="projects/pongGame.html"> <img id="pongGame" class="projectPic" src="img/pongGame.png"> </a>
+					    </div>
+					</div>
+				</div>
+
+				<div class="assignment">
+				  	<div class="col-sm-4">
+					    <div class="thumbnail">
+					      <a href="projects/lineFollowingBot.html"> <img id="lineFollowingBot" class="projectPic" src="img/lineFollowingBot.png"> </a>
+						</div>
+					</div>
+				</div>
+
 			</div>
-		</footer>
+		
+		</div>
+	</div>
 
 
-</body>
 
+	<!-- ..............  Contanct Box ................ -->
+	<div id ="contactBox">  
+
+		<img class="title" align="center" src="img/contact.png">  
+
+		<form action"contactInfo.php" method="post">
+
+			<fieldset>
+
+				<div class="names">
+					<label class="name" for="name">Name: </label>
+					<input name="firstName" placeholder="First"> <span></span></input>
+					<input name="lastName" placeholder="Last"></input>
+				</div>
+
+				<label class="email" for="email">E-mail: </label>
+				<input name="email" placeholder="noemail@mail.com"></input>	
+				<label class="comment" for="comment">Comment: </label>	
+				<textarea name="comment"></textarea>
+
+			</fieldset>
+
+			<fieldset>
+				<input class="btn btn-primary" type="submit" value="Send"></input>
+				<input class="btn btn-primary" type="reset" value="Reset"></input>
+			</fieldset>
+
+		</form>
+			
+	</div>
+
+
+
+	<!-- ..............  Social Media Box ................ -->
+	<div id = "socialMedia">
+			
+		 <!-- <img class="title" src="img/connect.png"> <br>  -->
+
+		<div class="socialIcon">
+
+	    
+			 <div class="social-buttons">
+  				<a href="https://www.facebook.com/Niirmit" class="social-button"><i class="fa fa-facebook"></i></a>
+  				<a href="https://github.com/Nirmit-Zinzu" class="social-button"><i class="fa fa-github"></i></a>
+ 				<a href="https://www.linkedin.com/in/nirmit-zinzuwadia-6a2128111" class="social-button"><i class="fa fa-linkedin"></i></a>
+ 				<a href="mailto:nirmit.001@gmail.com?Subject=Website%20" class="social-button"><i class="fa fa-envelope"></i></a>
+			</div>
+
+
+		 </div>
+	</div>
+
+				
+	
+		<!-- Footer  -->
+	<footer class="bye">
+			<div class="footer container-fluid">
+				<div class="row hidden-phone"> 
+					<div class="col-sm-2"> 
+						<div class="thumbnail"><img class="logo" src="img/logo.png" > </div>
+					</div>
+
+
+					<div class="row col-sm-10">
+						<blockquote class="blockquote-reverse">
+							<p><i class="quote fa fa-quote-left fa-3x"></i> 
+								Live as if you were to die tomorrow. Learn as if you were to live forever. 
+								<i class="quote fa fa-quote-right" aria-hidden="true"></i>
+							</p>
+							<footer> Mahatma Gandhi</footer>
+						</blockquote>
+						<div class="madeBy"><p>  &copy 2016 | Web Designed by Nirmit Z. </p> </div>
+					</div>
+					
+				</div>
+			</div>
+	</footer>
+
+		<!-- jQuesry and bootstrap extensions  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  		<!-- AutoScroll --> 
+		<script type="text/javascript" src = "autoScrollTo.js"> </script>
+	</body>
 </html>
+

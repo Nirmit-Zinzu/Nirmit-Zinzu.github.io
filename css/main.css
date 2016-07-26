@@ -1,0 +1,205 @@
+
+/* ------------------Entire Body----------------*/
+body {
+	background: #485563; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+	background-repeat: no-repeat;
+	font-family: 'Franklin Gothic Medium';
+	color: white;
+	padding: 10px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+	display:inline;  /* Allows text to be in the same line*/
+}
+
+
+.logo img:hover{
+	border-radius: 35px;
+	border: 2px dashed #1ABC9C;
+}
+/* Big titles for each container */
+.title {
+	max-width:100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.well {
+	box-shadow: 8px 8px 100px black; 
+	background: #D0D3D4;
+}
+
+#backToTop {
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+
+/* ------- Header on top with the lists ---------- */
+.heading {
+	background: black;  
+}
+
+
+
+/* ------------- About me paragraph -------------- */
+#biography {
+	font-family: 'Palatino Linotype';
+	font-size: 20px;
+	color: #2f2f2f;
+}
+
+#biography strong {
+	font-family: 'Comic Sans MS';
+	font-size: 20px;
+	color: #474e5d;
+}
+
+#biography h1{
+	display: block;
+	color: #0E6655; 
+}
+
+
+/* ----------------------------------------------------*/
+/* Details about the transaition on my picture */
+.myPicture {
+	max-width:100%;
+	transform: scale(0.9);
+}
+
+.myPicture:hover, .myPicture:active {
+	box-shadow: 5px 5px 100px red; 
+  	transform: scale(0.8);
+  	transition: 3s;
+}
+
+/* ----------- Current Status Panel Box Details ------------*/
+.myPanel {
+	margin-top: 18vw;
+	height: auto;
+}
+
+.myPanel .headBar {
+
+	background: #abbaab; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #abbaab , #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	        
+    padding: 3px 20px;
+    margin : 10px;
+    border: 3px solid #ECF0F1;
+	border-radius: 15px;
+	font-size: 20px;
+	font-family: 'Comic Sans MS';
+	color: black;
+	text-align: center;
+}
+
+.myPanel .info {
+	padding: 8px;
+	font-size: 15px;
+	font-family: Verdana;
+	color: #FDEBD0 ; 
+	text-align: center;
+}
+
+
+.myPanel button {
+	margin: 5px 5px 5px 0; 
+	width: 110px;
+	border: 2px solid orange;
+}
+
+
+/* ------------- Projects ------------*/
+
+#projects { 
+	background: #698D95;
+	margin: 10px;
+	padding: 20px 0;
+	margin-bottom: 50px;
+}
+
+.hover-content {
+	display: none;
+}
+
+.projectPic:hover, .projectPic:active {
+	opacity: .5;
+	transition: 4s; 
+}
+
+#markBook:hover, #markBook:active {
+	content: url(../img/markBookTitle.png);	
+}
+
+#reversiGame:hover, #reversiGame:active {
+	content: url(../img/ReversiTitle.png);	
+}
+
+#mazeGame:hover, #mazeGame:active {
+	content: url(../img/mazeGameTitle.png);
+}
+
+#pongGame:hover, #pongGame:active {
+	content: url(../img/pongGameTitle.png);
+}
+
+#lineFollowingBot:hover, #lineFollowingBot:active{
+	content: url(../img/lineFollowingBotTitle.png);
+}
+
+.thumbnail {
+	background: black;
+}
+
+
+.assignment h4 { /* Titles for the project (includes Language, Time, Motivation)*/
+	background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #E0E0E0), color-stop(100, #CFFFEC));
+	padding: 0 5 0 5;
+}
+
+
+/* ---------- SOCIAL ---------- */
+
+
+.socialIcon{ 
+	display: flex;
+  	justify-content: center;
+ }
+
+
+.social-button {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px 10px;
+  position: relative;
+}
+
+
+.social-button .fa {
+  font-size: 50px;
+  color: #DAF7A6  ;
+}
+
+
+.social-button .fa:hover {
+  transform: scale(1.5);
+  color: #117864;
+}
+
+
+/* ---------- Footer ---------- */
+.footer {
+	background: #485563;
+	padding: 20px;
+}
+
