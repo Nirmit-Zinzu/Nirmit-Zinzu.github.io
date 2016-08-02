@@ -1,5 +1,5 @@
 
-var scrollY = 0;
+/*var scrollY = 0;
 var distance = 40;
 var speed = 24;
 
@@ -20,7 +20,7 @@ function autoScrollTo(el) {
 		    clearTimeout(animator);
 	    }
 	}
-}
+}*/
 
 function resetScroller(){
 	 $("html, body").animate({ 

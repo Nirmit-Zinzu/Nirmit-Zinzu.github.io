@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.navigationBar a:hover { 
+  font-size: 1.4em; 
+ }
+
 .logo img:hover{
 	border-radius: 35px;
 	border: 2px dashed #1ABC9C;
@@ -82,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----------- Current Status Panel Box Details ------------*/
 .myPanel {
-	margin-top: 18vw;
+	margin-top: 17vw;
 	height: auto;
 }
 
@@ -201,5 +205,22 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
 	background: #485563;
 	padding: 20px;
+}
+
+blockquote p{
+  font-size: 20px;
+  color: #D4E6F1;
+}
+
+.quote {
+  color: #1ABC9C;
+}
+
+.madeBy { 
+  font-family: Georgia, serif;
+  font-size: 15px; 
+  color: black;
+  text-align: center;
+  background: #95A5A6;
 }
 
