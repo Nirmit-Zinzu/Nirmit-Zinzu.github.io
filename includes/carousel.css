@@ -7,20 +7,20 @@
 }
 
 .carousel_container { 
-	height: 350px;
-	margin: 0px; 
-	background: red;
+	height: 340px;
+	 margin: 0px; 
+	 background: #a00 url(../images/background.jpg) no-repeat 0px 0px; 
 }
 
 #carousel { 
 	margin: 0px auto 0px auto;
-	width: 600px;
-	height: 300px; 
+	 width: 600px;
+	  height: 300px; 
 }
 
 #carousel img { 
-	width: 290px; 
-	height: auto; 
+	width: 300px; 
+	height: 225px; 
 	cursor: pointer; 
 }
 
@@ -41,33 +41,25 @@
 }
 
 .caption_container { 
-	width: 500px; 
+	width: 435px; 
 	border-left: 3px solid #713e1b; 
 	margin: 0px 0px 0px 165px; 
-	padding: 20px;
-}
-
-
-
-#captions p { 
-	font-family: Arial; 
-	font-size: 14px; color: #444; 
-	margin: 0px 0px 0px 3px; 
+	padding: 0px 0px 0px 20px; 
 }
 
 #captions h2 { 
 	font-family: Georgia; 
 	font-size: 32px; 
 	font-weight: normal;
+	 margin: 0px 0px 5px 0px; 
 	 color: #6d8824; 
 }
 
-#captions h4 { 
-	font-family: Georgia;  
-	font-weight: normal;
-	color: #6d8824; 
+#captions p { 
+	font-family: Arial; 
+	font-size: 14px; color: #444; 
+	margin: 0px 0px 0px 3px; 
 }
-
 
 .leaves { 
 	position: absolute;
