@@ -1,0 +1,371 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title> My Webpage </title>
+		<link rel="icon" href="img/logo.png">
+		
+		<!-- Latest compiled and minified CSS (Bootstrap)-->
+		<link 
+			rel="stylesheet" 
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	    
+	
+    	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+		<!-- ..................... css style ...................... -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">    
+		<link rel="stylesheet" type="text/css" href="includes/carousel.css">
+	</head>
+
+
+	<!-- Following body tag contains the information that appears on the screen -->
+	<body>
+		<header>
+			<div class="navigationBar">
+				<nav class="navbar navbar-inverse">
+				  <div class="container-fluid">
+
+				    <div class="navbar-header">
+				      <!-- List Icon button when the screen goes small (Phone)  -->
+				      <button type="button" class="navbar-toggle glyphicon glyphicon-th-list" data-toggle="collapse" data-target="#myNavbar"></button>
+				      <a class="logo navbar-brand"> <img src="img/logo.png" width="70"></a>   <!-- Logo -->
+				   	</div>
+
+				   	<!-- Navigation bar on the top of the screen  -->
+				    <div class="collapse navbar-collapse" id="myNavbar">
+				        <ul class="nav navbar-nav">
+							
+							<li class="home"> <a href="#" onclick="moveToDiv('#biography');"> Home </a></li>
+					        <li class="projects"> <a href="#" onclick="moveToDiv('#projects');"> Projects </a></li>
+					        <li class="extras"> <a href="#" onclick="moveToDiv('.my_carousel');"> Additional Portfolio </a></li>
+					        <li class="connect"> <a href="#" onclick="moveToDiv('#socialMedia');"> Connect </a></li>
+				        </ul>
+				    </div>
+
+				  </div>
+				</nav>
+			</div>
+		</header>
+		
+		<!-- Icon in the bottom-right corner that allows user to scroll to the top  -->
+		<div id="backToTop"> <a href="#" onclick="moveToDiv('body');" ><img src="img/Back-to-Top.png"></a> </div>
+
+		<!-- ............ Infomation about myself (Bio) ............ -->
+		<div id="biography">
+
+		<!-- Status Widget Infomation   -->
+			<div class="container"> 
+				
+					<img class="myPicture img-circle col-md-6" src="img/sexy_beast.jpg">   
+					<div class="rightSide col-md-6"> <br>
+						
+						<img class="title" src="img/transparent_text_effect copy.png"> 
+
+						<div class="myPanel">
+							<div class="headBar" id="projectBar"> 
+								<img class="pointDown1" src="img/pointingArrowDown.png" width="30px">
+								 Project 
+								 <img class="pointDown1" src="img/pointingArrowDown.png" width="30px">
+							</div>
+							<div class="info" id="projectInfo"> <p> Developing an app </p> </div>
+
+							<div class="headBar" id="workBar">
+								<img class="pointDown2" src="img/pointingArrowDown.png" width="30px"> 
+								Work 
+								<img class="pointDown2" src="img/pointingArrowDown.png" width="30px"></div>
+							<div class="info" id="workInfo"> <p> Searching for a co-op placement </p> </div>
+
+							<div class="headBar" id="studyBar"> 
+								<img class="pointDown3" src="img/pointingArrowDown.png" width="30px">
+								Study
+								<img class="pointDown3" src="img/pointingArrowDown.png" width="30px">
+								</div>
+							<div class="info" id="studyInfo"> <p> Second year of engineering </p> </div>
+	
+						</div>
+					</div>
+			</div>
+
+			<p>
+				<div class="container well" > 
+			   		<h1><u>About me</u></h1> 
+					 Currently I am studying Computer Engineering at University of Toronto. I have finished first year and now going to the second. 
+					</br> </br>
+					I strive on challenges and enjoy solving critical engineering problems. Developing helpful user-friendly apps is my main passion. I continue to learn and enlarge my knowledge in the field of Computers. 
+					</br> </br>
+				</div>
+			</p> </br>
+
+		</div>
+
+
+		<!-- ............... PROJECTS .............. --> 
+		<div id="projects">
+
+			<img class="title" align="center" src="img/projectPortfolio.png">
+
+			<div class="container"> <br> 
+
+				<div class="row">
+
+					<div class="assignment">
+					  	<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <a href="projects/spyFallApp.html"> <img id="spyFall" class="projectPic" src="img/spyFall.png"> </a>
+						    </div>
+						</div>
+					</div>
+
+					<div class="assignment">
+					  	<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <a href="projects/markBookApp.html"> <img id="markBook" class="projectPic" src="img/marks_logo.png"> </a>
+						</div>
+						</div>
+					</div>
+
+					<div class="assignment">
+					  	<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <a href="projects/reversiGame.html"> <img id="reversiGame" class="projectPic" src="img/Reversi.png"> </a>
+						    </div>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="row">
+
+				<div class="assignment">
+					  	<div class="col-sm-4">
+						    <div class="thumbnail">
+						      <a href="projects/mazeGame.html"> <img id="mazeGame" class="projectPic" src="img/mazeGame.png"> </a>
+						    </div>
+						</div>
+					</div>
+
+					<div class="assignment">
+				  	<div class="col-sm-4">
+					    <div class="thumbnail">
+					      <a href="projects/PongGame.html"> <img id="pongGame" class="projectPic" src="img/pongGame.png"> </a>
+					    </div>
+					</div>
+				</div>
+
+				<div class="assignment">
+				  	<div class="col-sm-4">
+					    <div class="thumbnail">
+					      <a href="projects/lineFollowingBot.html"> <img id="lineFollowingBot" class="projectPic" src="img/lineFollowingBot.png"> </a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		
+		</div>
+	</div>
+
+
+	<div class="my_carousel">
+			<!-- Carousel Containter -->
+			<div class="carousel_container">
+				<div id="carousel"></div>
+				<img class="nextItem" src="images/arrow_left.png"/>
+				<img class="prevItem" src="images/arrow_right.png"/>
+			</div>
+			
+			<!-- Caption Container -->
+			<div class="caption_container">
+				<div id="captions"></div>
+			</div>
+			
+			<img class="leaves" src="images/leaves.png"/>
+			
+			<!-- Carousel Data -->
+			<div class="carousel_data">
+				
+				<!-- begin items -->
+
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/teapots_green.png" alt="teapot_green" />
+					</div>
+					<div class="caption">
+						<h2>Green Teapot</h2>
+						<p>Duis aute irure dolor in reprehenderit in voluptate cat.</p>
+					</div>
+				</div>
+				
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/teapots_steel.png" alt="teapot_steel" />
+					</div>
+					<div class="caption">
+						<h2>Steel Teapot</h2>
+						<p>Voluptate velit esse cillum dolore eu fugiat nulla pariatur ollit anim id est laborum ipsum dolor sit amet consectetur adipisicing.</p>
+					</div>
+				</div>
+				
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/teapots_gold.png" alt="teapot_gold" />
+					</div>
+					<div class="caption">
+						<h2>Golden Teapot</h2>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+					</div>
+				</div>			
+				
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/teapots_orange.png" alt="teapot_orange" />
+					</div>
+					<div class="caption">
+						<h2>Orange Teapot</h2>
+						<p>Lorem ipsum dolor dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+				
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/teapots_blue.png" alt="teapot_blue" />
+					</div>
+					<div class="caption">
+						<h2>Blue Teapot</h2>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehender. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt nostrud exercitation ullamco laboris ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+				
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/teapots_iron.png" alt="teapot_iron" />
+					</div>
+					<div class="caption">
+						<h2>Iron Teapot</h2>
+						<p>Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehender.</p>
+					</div>
+				</div>
+								
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="images/teapots_clay.png" alt="teapot_clay" />
+					</div>
+					<div class="caption">
+						<h2>Clay Teapot</h2>
+						<p>Duis aute irure dolor in reprehender. Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt nostrud exercitation ullamco.</p>
+					</div>
+				</div>
+				
+				<!-- end items -->
+				
+			</div>			
+		</div>
+
+
+
+
+	<!-- ..............  Contanct Box ................ -->
+	<!-- <div id ="contactBox">  
+
+		<img class="title" align="center" src="img/contact.png">  
+
+		<form action"contactInfo.php" method="post">
+
+			<fieldset>
+
+				<div class="names">
+					<label class="name" for="name">Name: </label>
+					<input name="firstName" placeholder="First"> <span></span></input>
+					<input name="lastName" placeholder="Last"></input>
+				</div>
+
+				<label class="email" for="email">E-mail: </label>
+				<input name="email" placeholder="noemail@mail.com"></input>	
+				<label class="comment" for="comment">Comment: </label>	
+				<textarea name="comment"></textarea>
+
+			</fieldset>
+
+			<fieldset>
+				<input class="btn btn-primary" type="submit" value="Send"></input>
+				<input class="btn btn-primary" type="reset" value="Reset"></input>
+			</fieldset>
+
+		</form>
+			
+	</div> -->
+
+
+
+	<!-- ..............  Social Media Box ................ -->
+	<div id = "socialMedia">
+			
+		 <!-- <img class="title" src="img/connect.png"> <br>  -->
+
+		<div class="socialIcon">
+
+	    
+			 <div class="social-buttons">
+  				<a href="https://www.facebook.com/Niirmit" target="_blank" class="social-button"><i class="fa fa-facebook" title="Facebook"></i></a>
+  				<a href="https://github.com/Nirmit-Zinzu" target="_blank" class="social-button"><i class="fa fa-github" title="GitHub"></i></a>
+ 				<a href="https://www.linkedin.com/in/nirmit-zinzuwadia" target="_blank" class="social-button"><i class="fa fa-linkedin" title="LinkedIn"></i></a>
+ 				<a href="mailto:nirmit.001@gmail.com?Subject=Website%20" class="social-button"><i class="fa fa-envelope" title="E-mail"></i></a>
+ 				<a href="files/WebResume.pdf" target="_blank" class="social-button"><i class="fa fa-file-pdf-o" title="Resume"></i></a>
+			</div>
+
+
+		 </div>
+	</div>
+
+				
+	
+		<!-- Footer  -->
+	<footer class="bye">
+			<div class="footer container-fluid">
+				<div class="row hidden-phone"> 
+					<div class="col-sm-2"> 
+						<div class="thumbnail"><img class="logo" src="img/logo.png" > </div>
+					</div>
+
+
+					<div class="row col-sm-10">
+						<blockquote class="blockquote-reverse">
+							<p><i class="quote fa fa-quote-left fa-3x"></i> 
+								Live as if you were to die tomorrow. Learn as if you were to live forever. 
+								<i class="quote fa fa-quote-right" aria-hidden="true"></i>
+							</p>
+							<footer> Mahatma Gandhi</footer>
+						</blockquote>
+						<div class="madeBy"><p>  &copy 2016 | Web Designed by Nirmit Z. </p> </div>
+					</div>
+					
+				</div>
+			</div>
+	</footer>
+
+		<!-- Bootstrap extensions  -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  		<script type="text/javascript" src="includes/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="includes/jquery.roundabout.min.js"></script>
+		<script type="text/javascript" src="carousel.js"></script>
+
+  		  		<!-- AutoScroll --> 
+		<script type="text/javascript" src = "autoScrollTo.js"> </script>
+
+	</body>
+</html>
+
