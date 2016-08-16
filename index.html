@@ -5,6 +5,8 @@
 	<head>
 
 		<title> My Webpage </title>
+		<link rel="icon" href="img/logo.png">
+
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -15,17 +17,13 @@
 			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	    
-		<!-- Optional theme -->
-		<!-- <link 
-			rel="stylesheet" 
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
- -->
+	
     	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
 		<!-- ..................... css style ...................... -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">    
-		<!-- <link rel="stylesheet" type="text/css" href="css/allPage.css">  -->
 		<link rel="stylesheet" type="text/css" href="css/contact.css">
+		<link rel="stylesheet" type="text/css" href="css/carousel.css">
 
 	</head>
 
@@ -49,6 +47,7 @@
 							
 							<li class="home"> <a href="#" onclick="moveToDiv('#biography');"> Home </a></li>
 					        <li class="projects"> <a href="#" onclick="moveToDiv('#projects');"> Projects </a></li>
+					        <li class="extras"> <a href="#" onclick="moveToDiv('.my_carousel');"> Additional Portfolio </a></li>
 					        <li class="connect"> <a href="#" onclick="moveToDiv('#socialMedia');"> Connect </a></li>
 				        </ul>
 				    </div>
@@ -122,6 +121,14 @@
 					<div class="assignment">
 					  	<div class="col-sm-4">
 						    <div class="thumbnail">
+						      <a href="projects/spyFallApp.html"> <img id="spyFall" class="projectPic" src="img/spyFall.png"> </a>
+						    </div>
+						</div>
+					</div>
+
+					<div class="assignment">
+					  	<div class="col-sm-4">
+						    <div class="thumbnail">
 						      <a href="projects/markBookApp.html"> <img id="markBook" class="projectPic" src="img/marks_logo.png"> </a>
 						</div>
 						</div>
@@ -135,18 +142,18 @@
 						</div>
 					</div>
 
-					<div class="assignment">
+				</div>
+
+
+				<div class="row">
+
+				<div class="assignment">
 					  	<div class="col-sm-4">
 						    <div class="thumbnail">
 						      <a href="projects/mazeGame.html"> <img id="mazeGame" class="projectPic" src="img/mazeGame.png"> </a>
 						    </div>
 						</div>
 					</div>
-
-				</div>
-
-
-				<div class="row">
 
 					<div class="assignment">
 				  	<div class="col-sm-4">
@@ -168,6 +175,135 @@
 		
 		</div>
 	</div>
+
+
+	<div class="my_carousel">
+			<!-- Carousel Containter -->
+			<div class="carousel_container">
+				<div id="carousel"></div>
+				<img class="nextItem" src="img/arrow_left.png"/>
+				<img class="prevItem" src="img/arrow_right.png"/>
+			</div>
+			
+			<!-- Caption Container -->
+			<div class="caption_container">
+				<div id="captions"></div>
+			</div>
+			
+			<img class="leaves" src="img/leaves.png"/>
+			
+			<!-- Carousel Data -->
+			<div class="carousel_data">
+				
+				<!-- begin items -->
+
+				<div class="carousel_item">
+					<div class="image">
+						<img src="img/robotics.png" alt="teapot_orange" />
+					</div>
+					<div class="caption">
+						<h2>Robotics   (2011 - 2015) </h2>
+						<p> 
+							I joined robotics club (Team 188) during the start of my high school. It was one of my best clubs I joined so far. It was fun to build robots and moreover, it was educational. I learned to plan, design and formulate the end product in a timely manner. During these years, I participated in many competitions including Worlds Championship level in St. Louise. 
+						 </p>
+					</div>
+				</div>
+
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="img/mcdonald.png" alt="teapot_green" />
+					</div>
+					<div class="caption">
+						<h2>McDonald's (2015- 2016)</h2>
+						<p>
+							After graduating grade 12, as part of my summer job I worked at McDonalds. I continued doing so for an entire year. I obtained customer service experience along with interpersonal skills. My duty was to acquire orders and inform customers of new deals and promos. I also handled all cash and credit card transactions. 
+						</p>
+					</div>
+				</div>
+				
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="img/staples.png" alt="teapot_steel" />
+					</div>
+					<div class="caption">
+						<h2>Staples (2013 - Co-op)</h2>
+						<p>
+							As part of my course in high school, I had to work in an outside industry. As part of this requirement, I did 6-week co-op placement at Staples as Technology Associate. My duty was to set up technology displays and help customers with their needs. Along with this, I also maintained inventory of stocks. 
+						</p>
+					</div>
+				</div>
+				
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="img/esp1.png" alt="teapot_gold" />
+					</div>
+					<div class="caption">
+						<h2>Pressure Control (2015)</h2>
+						<p>
+							As part of one of the courses in first year of university, my team and I had to figure out a way to avoid delivery of soggy food. I was the leader of the group and managed to initiate this idea. We ended up pitching this idea a final product. </p>
+							<br><h4>More Information about the design</h4>
+							<p>
+								The design consists of humidity sensor and heat sensor. The food is packaged into regular packaging system with holes on top to resolve the moisture issue. The container contains an open air filter cardboard on top (Figure 2.1.B) that allow air to escape from the system. The container is programmed such that when the humidity sensors detects certain humidity level, top lids of the container open up to allow moisture to escape. It has a portable heating pan at the bottom. The heating pan is managed by the heat sensors that maintain the internal and surrounding temperature. This allows safe environment for system in the trunk of a car and food is not burned.  
+							</p>		
+					
+						
+					</div>
+				</div>			
+				
+				<!-- Item -->
+				<div class="carousel_item">
+					<div class="image">
+						<img src="img/esp2.png" alt="teapot_orange" />
+					</div>
+					<div class="caption">
+						<h2>The Chipmunk Village (2016)</h2>
+						<p>
+							As part of one of the courses in first year of university, my team and I had to figure out a way to meet the client’s demand. Out client wanted to develop a Chipmunk Game that is entertaining for both Chipmunks and audience to watch. I lead the team and initiated the following idea. This is the end product of our engineering project. </p>
+							<br><h4>More Information about the design</h4>
+
+							 <p> 
+							 	Chipmunk Village is a game that is specifically built to allow domestic Chipmunks to play and grab food. The design includes three containers; each has certain tasks for Chipmunks to perform. The design enables the Chipmunks to go through certain obstacles and finally attain food. Container number one and three provide means of entrance/exit. The second container is closed from all sides and contains food for the Chipmunks. The design is made such that each container can only accommodate one Chipmunk in each container. The exterior frame is made of plexiglass which is durable and transparent, so it can allow users to watch Chipmunks play from all angles. The interior part of design contains a park with artificial grass. Each item is put in place with Velcro. This makes it easy for the user to take apart any items whenever needed. Also, it allows users to place new items in the game easily. The design contains pipeline to allow Chipmunks to go from one container to the other. 
+							 </p>
+						
+					</div>
+				</div>
+
+				<div class="carousel_item">
+					<div class="image">
+						<img src="img/tennis_awards.png" alt="teapot_orange" />
+					</div>
+					<div class="caption">
+						<h2>Tennis</h2>
+						<p>
+							One of my favourite sports is tennis. I was in highschool tennis team. I have played in many tournamnets and won few awards.
+						 </p>
+						
+					</div>
+				</div>
+
+				
+				<div class="carousel_item">
+					<div class="image">
+						<img src="img/computer_award.png" alt="teapot_orange" />
+					</div>
+					<div class="caption">
+						<h2>Computer Engineering Awards</h2>
+						<p>
+							My genuine interest towards engineering increased in Grade 11 as I started taking more technology related courses. As a result of my passion and true dedication, I won an award in computer engineering in Grade 11 and Grade 12. 
+
+						 </p>
+						
+					</div>
+				</div>
+				
+				<!-- end items -->
+				
+			</div>			
+		</div>
+
 
 
 
@@ -254,6 +390,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+  		<script type="text/javascript" src="jquery-1.6.min.js"></script>
+  		<script type="text/javascript" src="jquery.roundabout.min.js"></script>
+		<script type="text/javascript" src="carousel.js"></script>
   		<!-- AutoScroll --> 
 		<script type="text/javascript" src = "autoScrollTo.js"> </script>
 	</body>

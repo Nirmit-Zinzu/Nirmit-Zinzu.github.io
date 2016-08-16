@@ -36,22 +36,24 @@ function moveToDiv(id) {
 
 $(document).ready(function() {
 
-	$("#workInfo").hide(); $("#projectInfo").hide(); $("#studyInfo").hide();
+	$("#workInfo").hide(); $("#projectInfo").hide(); $("#studyInfo").hide(); 
 
     $("#projectBar").click(function(){
-        $("#projectInfo").slideToggle("slow");
+        $("#projectInfo").toggle("3000");
         $('.pointDown1').toggle("slow");
     });
 
     $("#workBar").click(function(){
-        $("#workInfo").slideToggle("slow");
+        $("#workInfo").toggle("3000");
          $('.pointDown2').toggle("slow");
     });
 
     $("#studyBar").click(function(){
-        $("#studyInfo").slideToggle("slow");
+        $("#studyInfo").toggle("3000");
          $('.pointDown3').toggle("slow");
     });
+
+
 
 });
 

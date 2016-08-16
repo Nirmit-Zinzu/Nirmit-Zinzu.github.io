@@ -4,8 +4,8 @@ body {
 	background: #485563; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
 	background-repeat: no-repeat;
+	
 	font-family: 'Franklin Gothic Medium';
 	color: white;
 	padding: 10px; 
@@ -125,7 +125,14 @@ h1, h2, h3, h4, h5, h6 {
 /* ------------- Projects ------------*/
 
 #projects { 
-	background: #698D95;
+	background: -moz-linear-gradient(230deg, rgba(255,242,251,1) 0%, rgba(160,176,193,1) 42%, rgba(29,85,115,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(29,85,115,1)), color-stop(58%, rgba(160,176,193,1)), color-stop(100%, rgba(255,242,251,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(230deg, rgba(255,242,251,1) 0%, rgba(160,176,193,1) 42%, rgba(29,85,115,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(230deg, rgba(255,242,251,1) 0%, rgba(160,176,193,1) 42%, rgba(29,85,115,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(230deg, rgba(255,242,251,1) 0%, rgba(160,176,193,1) 42%, rgba(29,85,115,1) 100%); /* ie10+ */
+background: linear-gradient(220deg, rgba(255,242,251,1) 0%, rgba(160,176,193,1) 42%, rgba(29,85,115,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF2FB', endColorstr='#1D5573',GradientType=0 ); /* ie6-9 */
+
 	margin: 10px;
 	padding: 20px 0;
 	margin-bottom: 50px;
@@ -160,6 +167,10 @@ h1, h2, h3, h4, h5, h6 {
 	content: url(../img/lineFollowingBotTitle.png);
 }
 
+#spyFall:hover, #spyFall:active { 
+	content: url(../img/spyFallTitle.jpg);
+ }
+
 .thumbnail {
 	background: black;
 }
@@ -177,6 +188,7 @@ h1, h2, h3, h4, h5, h6 {
 .socialIcon{ 
 	display: flex;
   	justify-content: center;
+  	padding-top: 50px;
  }
 
 
