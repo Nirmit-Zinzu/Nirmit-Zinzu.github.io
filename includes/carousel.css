@@ -9,7 +9,13 @@
 .carousel_container { 
 	height: 340px;
 	 margin: 0px; 
-	 background: #a00 url(../images/background.jpg) no-repeat 0px 0px; 
+	background: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #C7C49D),
+		color-stop(1, #080708)
+	);
 }
 
 #carousel { 
