@@ -1,9 +1,9 @@
 .my_carousel { 
 	position: relative; 
-	width: 760px; 
-	margin: 0px;
+	width: 950px; 
 	background-color: #fff;
 	margin: 30px auto 20px auto;
+	background-color: #F0EEDF;
 }
 
 .carousel_container { 
