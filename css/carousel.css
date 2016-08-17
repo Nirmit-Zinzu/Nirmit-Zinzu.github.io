@@ -25,7 +25,8 @@
 }
 
 #carousel img { 
-	width: 320px; 
+	width: 370px; 
+	height: 370px; 
 	cursor: pointer; 
 }
 
