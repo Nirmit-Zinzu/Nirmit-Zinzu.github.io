@@ -22,6 +22,8 @@ function autoScrollTo(el) {
 	}
 }*/
 
+
+
 function resetScroller(){
 	 $("html, body").animate({ 
 	 	scrollTop: 0 
@@ -34,9 +36,24 @@ function moveToDiv(id) {
     }, "800");
 }
 
+
+$("#workInfo").hide(); 
+$("#projectInfo").hide(); 
+$("#studyInfo").hide(); 
+$("#backToTop").hide(); 
+
+
 $(document).ready(function() {
 
-	$("#workInfo").hide(); $("#projectInfo").hide(); $("#studyInfo").hide(); 
+	$(window).scroll(function() { 
+		if ($(this).scrollTop() > 100) { 
+			$("#backToTop").fadeIn(); 
+		} else {
+			$("#backToTop").fadeOut(); 
+		}
+
+	});
+
 
     $("#projectBar").click(function(){
         $("#projectInfo").toggle("3000");
@@ -52,8 +69,6 @@ $(document).ready(function() {
         $("#studyInfo").toggle("3000");
          $('.pointDown3').toggle("slow");
     });
-
-
 
 });
 

@@ -34,9 +34,6 @@ function createCustomButtons(){
 		$('div#carousel').roundabout('animateToPreviousChild', showCaption);
 	});
 	
-	/*$('div#carousel img').click(function(){
-		hideCaption();
-	});*/
 }
 
 function hideCaption(){
