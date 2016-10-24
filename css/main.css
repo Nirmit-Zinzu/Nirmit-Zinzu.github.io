@@ -203,13 +203,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF2FB', end
 
 .social-button .fa {
   font-size: 50px;
-  color: #DAF7A6  ;
+  color: #99CCCC  ;
 }
 
 
 .social-button .fa:hover {
   transform: scale(1.5);
-  color: #117864;
+  color: #99CCAE;
 }
 
 
