@@ -316,6 +316,7 @@
 
 					// start children
 					methods.initChildren.apply(self, [callback, relayout]);
+
 				});
 		},
 

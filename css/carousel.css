@@ -1,32 +1,35 @@
 .my_carousel { 
 	position: relative; 
-	width: 950px; 
-	background-color: #fff;
+	width: 950px;
+    background: rgba(17, 160, 232, 0.2);
 	margin: 30px auto 20px auto;
-	background-color: #F0EEDF;
+	background-color: rgba(11, 23, 41, 0.5);
 }
 
 .carousel_container { 
 	height: 350px;
-	margin: 0px; 
+	margin: 0px;
 	background-image: -webkit-gradient(
 		linear,
 		left bottom,
 		left top,
-		color-stop(0, #C7C49D),
-		color-stop(1, #080708)
+		color-stop(0, #000900),
+		color-stop(1, #FFFFFF)
 	);
+background-image: -webkit-linear-gradient(top, #D9FFF5 0%, #494D4C 100%);
+
+
 }
 
 #carousel { 
 	margin: 0px auto 0px auto;
 	width: 600px;
-	height: 300px; 
+	height: 300px;
 }
 
 #carousel img { 
-	width: 370px; 
-	height: 370px; 
+	width: 400px; 
+	height: 400px;
 	cursor: pointer; 
 }
 
@@ -46,18 +49,19 @@
 	cursor: pointer; 
 }
 
-.caption_container { 
-	width: 500px; 
-	border-left: 3px solid #713e1b; 
-	margin: 0px 0px 0px 165px; 
+.caption_container {
+	width: 550px;
+	border-left: 3px solid #713e1b;
+	margin: 0px 0px 0px 165px;
 	padding: 20px;
 }
 
 
 
 #captions p { 
-	font-family: Arial; 
-	font-size: 14px; color: #444; 
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	color: #ffe6b3;
 	margin: 0px 0px 0px 3px; 
 }
 
@@ -65,7 +69,7 @@
 	font-family: Georgia; 
 	font-size: 32px; 
 	font-weight: normal;
-	 color: #6d8824; 
+	 color: #6d8824;
 }
 
 #captions h4 { 

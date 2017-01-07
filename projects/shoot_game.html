@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> Shoot Game </title>
+	<link rel="icon" href="../img/shoot_game_page.jpg">
+
+	<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+			integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link
+			rel='stylesheet prefetch'
+			href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+	<link
+			rel="stylesheet"
+			type="text/css"
+			href="../css/projectPage.css">
+
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-81101506-2', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+</head>
+
+<body>
+
+
+<header>
+	<div class="navigationBar">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle glyphicon glyphicon-th-list" data-toggle="collapse" data-target="#myNavbar"></button>
+					<a class="logo navbar-brand"> <img src="../img/logo.png" width="70"></a>
+
+				</div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="home"> <a href="../index.html#home"> Home </a></li>
+						<li class="projects"> <a href="../index.html#projects" > Projects </a></li>
+						<li class="extras"> <a href="../index.html#carousel" > Additional Portfolio </a></li>
+						<li class="connect"> <a href="../index.html#socialMedia" > Connect </a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+</header>
+
+
+<div class="information">
+	</br>
+
+	<div class="container">
+
+		<p>
+		<h1>Shoot Game</h1>
+		<br><br>
+
+		<h3>Language</h3> - Verilog </br> </br>
+		<h3>Time</h3> - Digital Logic, Final Project </br> </br>
+
+		<h3>Description</h3> </br>
+
+        Following game is buit on Altera's DE1-SoC I, Cyclone V FPGA Board by using a VGA adapter and a PS2 keyboard.
+
+        <br><br>
+
+        <b>Shoot</b> is a single/double player game which allows the user to shoot down an opponent using a gun.
+        In a single player game, the target on the right moves automatically.
+        However, if two payer game is selected, the second user can dodge the bullets, but not shoot.
+        User on the left is given nine bullets to accomplish the task otherwise, they lose.
+        If the user is hits target on the right with a bullet, they win.
+
+        <br> <br>
+
+		</p>
+	</div>
+</div>
+
+<div class="container">
+
+    <table class="table table-striped table-inverse">
+      <thead>
+        <tr>
+          <th>Game Display</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+            <td> <img width="100%"src="../img/shoot_start_page.jpg">  </td>
+            <td>
+                <b> <h4> 1. Start Page </h4> </b> <br>
+              This is the initial page of the game.
+              As displayed on the screen, user has to press 1 or 2 depending on the whether they want to play
+              Player vs. Player or Player vs. Computer. Based on the selection, user is taken to an appropriate game state.
+          </td>
+
+        </tr>
+
+        <tr>
+          <td> <img width="100%" src="../img/shoot_game_page.jpg"> </td>
+            <td>
+                <b> <h4> 1. Game Page </h4> </b> <br>
+                The objective of this page is to allow the user to shoot down Trump
+                (if it is a two player game, the user on the right (Trump) can dodge the bullets but not shoot).
+                User is given 9 bullets to shoot the target. As depicted in the picture,
+                when the bullet goes through the wall, it leaves a blue mark on the wall to make it more realistic.
+             </td>
+        </tr>
+
+        <tr>
+         <td>
+             <img width="100%" src="../img/shoot_end_page.jpg"></td>
+         </td>
+            <td>
+                <b> <h4> 1. End Page </h4> </b> <br>
+                If the user is unable to get the target, the game goes to the loose page else it goes to the win page.
+                User is given an option to restart the game by simply pressing esc button on the keyboard.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>
+
+</body>
+
+</html>
