@@ -1,2 +1,3 @@
 # Nirmit-Zinzu.github.io
-Website
+
+Personal Website to showcase my projects. 
