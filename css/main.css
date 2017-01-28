@@ -6,7 +6,7 @@ body {
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        
+
 	font-family: 'Franklin Gothic Medium';
 	color: white;
 	padding: 10px; 
@@ -97,10 +97,10 @@ h1, h2, h3, h4, h5, h6 {
 .abc {
    background: url(../img/new_me.png);
    background-size: cover;
-   width: 92%;
-   min-height : 69%;
+   //width: 92%;
    border-bottom: 6px solid #B1E3BB;
    background-color: lightgrey;
+
 	border-radius: 20px;
 
 }
