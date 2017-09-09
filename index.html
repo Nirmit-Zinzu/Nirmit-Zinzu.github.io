@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>My Webpage</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ..................... css style ...................... -->
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+
+</head>
+
+
+<body>
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+
+  <!--Opens up bar-lines when screen too small-->
+  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+     href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+     <i class="fa fa-bars"></i>
+  </a>
+
+  <!--Navigation Bar -->
+  <div class="w3-bar" id="myNavbar">
+    <a href="#" onclick="moveToDiv('#home');" class="w3-bar-item w3-btn w3-button w3-hide-small"><i class="fa fa-home"></i> HOME</a>
+    <a href="#" onclick="moveToDiv('#about');" class="w3-bar-item w3-btn w3-button  w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#" onclick="moveToDiv('#portfolio');" class="w3-bar-item w3-btn w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#" onclick="moveToDiv('#contact');" class="w3-bar-item w3-btn w3-button  w3-hide-small"><i class="fa fa-envelope"></i> CONNECT</a>
+    <a href="#" onclick="moveToDiv('#home');" class="w3-bar-item w3-hide-small w3-btn w3-button w3-right w3-blue-grey">
+      <i class="fa fa-level-up"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+    <a href="#" onclick="moveToDiv('#about');" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#" onclick="moveToDiv('#portfolio');"  class="w3-bar-item w3-button">PORTFOLIO</a>
+    <a href="#" onclick="moveToDiv('#contact');" class="w3-bar-item w3-button">CONNECT</a>
+  </div>
+
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+       <a href="#" onclick="moveToDiv('#about');" class="w3-bar-item w3-btn w3-hide-small">
+    <span class="w3-center w3-padding-large w3-black w3-hover-blue-grey w3-xlarge w3-wide w3-animate-opacity">
+         NIRMIT <span class="w3-hide-small">ZINZUWADIA</span>  </span> </a>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center"> - ABOUT ME - </h3>
+  <div class="w3-row">
+    <div class="w3-col w3-third w3-center w3-padding-large">
+      <img src="IMG/bio-me.jpg" class="w3-round w3-image" alt="Photo of Me" width="100%" height="333">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Nirmit Zinzuwadia</b></p>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col w3-twothird w3-hide-small">
+      <p class="w3-small"> I am a <b class="w3-text-blue-grey"> third-year </b> computer engineering student at the University of Toronto with a passion for technology.
+          I strive on challenges and enjoy solving critical engineering problems. <br><br>
+          Recently this summer, I worked at <b class="w3-text-blue-grey"> Indigo Books and Music Home Office </b> as a summer intern.
+          I worked as an iOS mobile developer and data scientist.
+          Previously, I have worked on a number of diverse topics throughout my projects from refactoring,
+          to bug fixing, to feature implementation, to performance. I enjoy creating personal projects to learn and
+          enlarge my knowledge in the field of technology. <br><br>
+          Currently, I am seeking <b class="w3-text-blue-grey"> full time 12-16 month PEY position </b> to apply my past experience assisting
+          company’s growth, mission, and passion.
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-code"></i>Programming</p>
+  <div class="w3-light-grey"> <div class="w3-container w3-padding-xsmall w3-text-white color1 w3-center" style="width:95%">C++</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-white color2 w3-center" style="width:90%">C</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-white color3 w3-center" style="width:85%">Java</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color4 w3-center" style="width:80%">NIOS II Assembly Language</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color5 w3-center" style="width:75%">Verilog</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color6 w3-center" style="width:65%">Objective C</div> </div>
+
+  <p class="w3-wide"><i class="fa fa-html5"></i>Web Design</p>
+  <div class="w3-light-grey"> <div class="w3-container w3-padding-xsmall  w3-text-white color1 w3-center" style="width:96%">HTML</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-white color2 w3-center" style="width:93%">CSS</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color6 w3-center" style="width:55%">JQuery</div></div>
+
+  <p class="w3-wide"><i class="fa fa-mobile"></i>App Development</p>
+  <div class="w3-light-grey"> <div class="w3-container w3-padding-xsmall w3-text-grey color5 w3-center" style="width:75%">Android</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color6 w3-center" style="width:50%">IOS</div> </div>
+
+  <p class="w3-wide"><i class="fa fa-file"></i>Professional Software</p>
+  <div class="w3-light-grey"> <div class="w3-container w3-padding-xsmall w3-text-white color1 w3-center" style="width:98%">Microsoft Office (Word, PowerPoint, Excel, Project, Access)</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-white color2 w3-center" style="width:90%">GitHub</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color4 w3-center" style="width:70%">MATLAB</div> </div>
+
+  </div>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xlarge w3-text-white w3-wide"><p class="w3-light-grey w3-padding-small">  PORTFOLIO </p></span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <h3 class="w3-center"> - EXPERIENCE -  </h3>
+    <div class="w3-col w3-half">
+      <a href="Job/indigo.html">
+        <img src="IMG/job_indigo.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid"> Indigo Books & Music </p>
+       <p> IOS app developer . Data Scientist </p>
+    </div>
+
+     <div class="w3-col w3-right w3-half">
+      <a href="Job/staples.html">
+        <img src="IMG/job_staple.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid"> Staples Business Depot </p>
+         <p> Technology Associate . Customer Service Representative </p>
+       <p> </p>
+    </div>
+  </div>
+  </div>
+
+
+
+<div class="w3-content w3-container" id="portfolio">
+  <h3 class="w3-center"> - PROJECTS - </h3>
+  <div class="w3-row w3-special w3-text-blue-grey w3-center">
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge"> <i class="fa fa-users" aria-hidden="true"></i> </span><br>
+    Group/ Pair Project
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge"><i class="fa fa-user" aria-hidden="true"></i></span><br>
+    Personal Project
+  </div>
+
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge"><i class="fa fa-mobile" aria-hidden="true"></i></span><br>
+    App
+  </div>
+
+</div> <br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+
+    <div class="w3-col m3">
+      <a href="Projects/maps.html">
+        <img src="IMG/cover_map.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid"> Maps  <i class="fa fa-users"></i> </p>
+       <p> Software program that provides functionality similar to Google Maps, plus some other features. </p>
+    </div>
+
+   <div class="w3-col m3">
+      <a href="Projects/assembly_maze.html">
+        <img src="IMG/cover_assembly_maze.jpg" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid">Maze - Assembly <i class="fa fa-users"></i> </p>
+       <p> A maze game which allows user to finish various stages using Altera's DE1-SoC board. </p>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="Projects/shoot.html">
+        <img src="IMG/cover_shoot.jpg" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid">Shoot <i class="fa fa-users"></i> </p>
+       <p> Game buit on Altera's DE1-SoC I, Cyclone V FPGA Board using a VGA adapter and a PS2 keyboard. </p>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="Projects/spyFall.html">
+        <img src="IMG/cover_spyFall.jpg" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid">SpyFall <i class="fa fa-user"></i> <i class="fa fa-mobile"></i> </p>
+       <p> Modified version of the board game. Role of each user is delivered easily. </p>
+    </div>
+  </div>
+
+
+  <div class="w3-row-padding w3-center w3-section">
+
+     <div class="w3-col m3">
+        <a href="Projects/markBook.html">
+          <img src="IMG/cover_markBook.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> GPA Calculator  <i class="fa fa-user"></i> <i class="fa fa-mobile"></i></p>
+        <p> An android app which allws user to store, modify, delete and view current/seasonal GPA.  </p>
+      </div>
+
+    <div class="w3-col m3">
+        <a href="Projects/reversi.html">
+          <img src="IMG/cover_reversi.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> Reversi </p>
+        <p> Logistics of the game, which allows user to play with a smart computer AI.  </p>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="Projects/line-following-robot.html">
+          <img src="IMG/cover_bot.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> Line Following Bot </p>
+        <p> An Arduino coded robot which follows a black line. </p>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="Projects/mazeGame.html">
+          <img src="IMG/cover_maze.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> Graphical Maze </i></p>
+        <p> Graphical game -  Overcome various obstacles to complete the course. </p>
+    </div>
+
+    </div>
+
+
+  <div id="hide_projects" >
+    <div class="w3-row-padding w3-center w3-section">
+
+      <div class="w3-col m3">
+        <a href="Projects/pong.html">
+          <img src="IMG/cover_pong.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> Pong </p>
+        <p> Computer versus player game - Control the pallet using arrow keys to hit the ball.</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="w3-center w3-padding-32"> <button class="w3-center w3-button w3-padding-large w3-light-grey" id="show_more" >LOAD MORE</button> </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xlarge w3-text-white w3-wide"><p class="w3-light-grey w3-padding-small"> CONTACT </p></span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center"> - STAY CONNECTED - </h3>
+
+    <div class="w3-row w3-section">
+    <div class="w3-padding-16 w3-center">
+        <div class="w3-third"> <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Toronto, ON, Canada <br> </div>
+        <div class="w3-third"> <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> (647) 780 9249<br> </div>
+        <div class="w3-third"> <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                <a href="mailto:nirmit.001@gmail.com?Subject=Website%20">nirmit.001@gmail.com </a> <br>
+        </div>
+    </div>
+
+      <div class="w3-padding-32 w3-center">
+          <div class="w3-section">
+                <a href="https://www.facebook.com/Niirmit" target="_blank"><i class="facebook fa fa-facebook fa-2x" title="Facebook"></i></a>
+          </div>
+
+          <div class="w3-third w3-section">
+              <a href="https://github.com/Nirmit-Zinzu" target="_blank"><i class="github fa fa-github fa-2x" title="GitHub"></i></a>
+          </div>
+
+          <div class=" w3-third w3-section">
+              <a href="https://www.linkedin.com/in/nirmit-zinzuwadia" target="_blank"><i class="linkedIn fa fa-linkedin fa-2x" title="LinkedIn"></i></a>
+          </div>
+
+          <div class="w3-third w3-section">
+			<a href="https://www.youtube.com/channel/UCxERmm1eIxhQR1qecPYdXsQ" target="_blank"><i class="youTube fa fa-youtube-play fa-2x" title="YouTube"></i></a>
+          </div>
+
+          <div class="w3-third w3-section">
+          </div>
+
+          <div class="w3-third w3-section">
+			<a href="https://www.instagram.com/ninizinzu/" target="_blank"><i class="instagram fa fa-instagram fa-2x" title="Instagram"></i></a>
+          </div>
+
+      </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-32">
+    2016-17 | Nirmit Z. <br>
+</footer>
+
+<script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+  <script type="text/javascript" src="JavaScript/jquery-1.6.min.js"></script>
+<script type="text/javascript" src = "JavaScript/indexScroll.js"></script>
+
+</body>
+</html>

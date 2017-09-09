@@ -1,0 +1,102 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("../IMG/cover-me.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("http://ttthinc.com.au/wp-content/uploads/layerslider/Homepage-Slider/slide-1000x400-projects-temp.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("http://obgyn.mcmaster.ca/images/default-source/default-album/contact.jpg?sfvrsn=0");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.w3-wide-mid{
+    letter-spacing:5px
+ }
+
+.logo {
+    color: #45B39D  ;
+    font-size: 25px;
+}
+
+.w3-special {
+     background-color:#fff!important
+ }
+
+.top-margin {
+    margin-top: 5px;
+}
+
+/* Skill Bar Colors */
+.color1 {
+    background-color: #607d8b;
+}
+.color2 {
+    background-color: #879fab;
+}
+.color3 {
+    background-color: #a5b7c0;
+}
+.color4 {
+    background-color: #c3cfd5;
+}
+.color5 {
+    background-color: #d2dbe0;
+}
+.color6 {
+    background-color: #e1e7ea;
+}
+
+/* Social Media Colors */
+.facebook {
+    color: #3B5998;
+}
+.gitHub {
+    color: black;
+}
+.linkedIn {
+    color: #007bb5;
+}
+.youTube {
+    color: #bb0000;
+}
+.snapchat {
+    color: #fffc00;
+}
+.instagram {
+    color: #125688;
+}
