@@ -1,0 +1,35 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body, html {
+    background-image: url('http://wallpapercave.com/wp/lWS9r8c.jpg');
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+::selection {
+  background: #FFFFE0  ; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FFFFE0  ; /* Gecko Browsers */
+}
+
+.w3-wide-mid{
+    letter-spacing:3px;
+    color: white;
+ }
+
+.bb {
+    color: #D4E6F1;
+}
+
+.logo {
+    color: #45B39D  ;
+     font-size: 23px;
+}
+
+.desc {
+    color: #ede8d9;
+}

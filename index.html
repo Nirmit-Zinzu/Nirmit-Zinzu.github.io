@@ -1,399 +1,342 @@
-<!DOCTYPE <!DOCTYPE html>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
 
-	<title> My Webpage </title>
-    <meta name="viewport" content="user-scalable = no">
+    <title>My Webpage</title>
 
-	<link rel="icon" href="img/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified CSS (Bootstrap)-->
-	<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-			integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-
-	<!-- ..................... css style ...................... -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/carousel.css">
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		 ga('create', 'UA-81101506-2', 'auto');
-		 ga('send', 'pageview');
-	</script>
+    <!-- ..................... css style ...................... -->
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
 
 </head>
 
 
-<!-- Following body tag contains the information that appears on the screen -->
 <body>
-<header>
-	<div id="navigationBar">
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
 
-				<div class="navbar-header">
-					<a class="logo navbar-brand"> <img src="img/logo.png"></a>   <!-- Logo -->
+  <!--Opens up bar-lines when screen too small-->
+  <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+     href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+     <i class="fa fa-bars"></i>
+  </a>
 
-					<!-- List Icon button when the screen goes small (Phone)  -->
-					<button type="button" class="navbar-toggle glyphicon glyphicon-th-list" data-toggle="collapse" data-target="#myNavbar"></button>
+  <!--Navigation Bar -->
+  <div class="w3-bar" id="myNavbar">
+    <a href="#" onclick="moveToDiv('#home');" class="w3-bar-item w3-btn w3-button w3-hide-small"><i class="fa fa-home"></i> HOME</a>
+    <a href="#" onclick="moveToDiv('#about');" class="w3-bar-item w3-btn w3-button  w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#" onclick="moveToDiv('#portfolio');" class="w3-bar-item w3-btn w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#" onclick="moveToDiv('#contact');" class="w3-bar-item w3-btn w3-button  w3-hide-small"><i class="fa fa-envelope"></i> CONNECT</a>
+    <a href="#" onclick="moveToDiv('#home');" class="w3-bar-item w3-hide-small w3-btn w3-button w3-right w3-blue-grey">
+      <i class="fa fa-level-up"></i>
+    </a>
+  </div>
 
-				</div>
-
-				<!-- Navigation bar on the top of the screen  -->
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav">
-						<li class="home"> <a href="#" onclick="moveToDiv('#biography');"> Home </a></li>
-						<li class="projects"> <a href="#" onclick="moveToDiv('#projects');"> Projects </a></li>
-						<li class="extras"> <a href="#" onclick="moveToDiv('.my_carousel');"> Additional Portfolio </a></li>
-						<li class="connect"> <a href="#" onclick="moveToDiv('#socialMedia');"> Connect </a></li>
-					</ul>
-				</div>
-
-			</div>
-		</nav>
-	</div>
-</header>
-
-<!-- Icon in the bottom-right corner that allows user to scroll to the top  -->
-<div id="backToTop"> <a href="#" onclick="moveToDiv('body');" ><img src="img/Back-to-Top.png"></a> </div>
-
-<!-- ............ Infomation about myself (Bio) ............ -->
-<div id="biography">
-
-	<!-- Status Widget Infomation -->
-	<div class="container abc">
-
-		<!--<img class="myPicture img-circle col-md-6" src="img/sexy_beast.jpg">-->
-		<div class="rightSide col-md-6"> <br>
-
-			<img class="title" src="img/transparent_text_effect copy.png"> <br>
-			<div class="tags" >
-
-				<span class="tag tag-pill tag-info">Student - University of Toronto</span>
-				<span class="tag tag-pill tag-info">Passionate about Technology</span> <br>
-				<span class="tag tag-pill tag-info">Driven</span>
-				<span class="tag tag-pill tag-info">Developer</span>
-				<span class="tag tag-pill tag-info">Leader</span>
-				<span class="tag tag-pill tag-info">Friendly</span>
-				<span class="tag tag-pill tag-info">Energetic</span>
-				<span class="tag tag-pill tag-info">Entrepreneurial</span>
-				<span class="tag tag-pill tag-info">Social</span>
-				<span class="tag tag-pill tag-info">Team Player</span>
-				<span class="tag tag-pill tag-info">Reliable</span>
-
-				<br> <br>
-
-			</div>
-
-			<div class="myPanel">
-				<div class="headBar" id="projectBar">
-					<img class="pointDown1" src="img/pointingArrowDown.png" width="30px">
-					Project
-					<img class="pointDown1" src="img/pointingArrowDown.png" width="30px">
-				</div>
-				<div class="info" id="projectInfo"> <p> Developing an App </p> </div>
-
-				<div class="headBar" id="workBar">
-					<img class="pointDown2" src="img/pointingArrowDown.png" width="30px">
-					Work
-					<img class="pointDown2" src="img/pointingArrowDown.png" width="30px"></div>
-				<div class="info" id="workInfo">
-					<p> Currently, I am seeking a summer co-op position to apply my past experience assisting a company's growth, mission and passion.  </p>
-				</div>
-
-				<div class="headBar" id="studyBar">
-					<img class="pointDown3" src="img/pointingArrowDown.png" width="30px">
-					Study
-					<img class="pointDown3" src="img/pointingArrowDown.png" width="30px">
-				</div>
-				<div class="info" id="studyInfo"> <p> Second Year of Computer Engineering </p> </div>
-
-			</div>
-		</div>
-	</div>
-
-	<p>
-
-	</p> </br>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+    <a href="#" onclick="moveToDiv('#about');" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#" onclick="moveToDiv('#portfolio');"  class="w3-bar-item w3-button">PORTFOLIO</a>
+    <a href="#" onclick="moveToDiv('#contact');" class="w3-bar-item w3-button">CONNECT</a>
+  </div>
 
 </div>
 
-
-<!-- ............... PROJECTS .............. -->
-<div id="projects">
-
-	<img class="title" align="center" src="img/projectPortfolio.png">
-
-	<div class="container"> <br>
-
-		<div class="row">
-
-			<div class="assignment">
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<a href="projects/shoot_game.html"> <img id="shoot_trump" class="projectPic" src="img/shoot_trump_logo.jpg"> </a>
-					</div>
-				</div>
-			</div>
-
-			<div class="assignment">
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<a href="projects/spyFallApp.html"> <img id="spyFall" class="projectPic" src="img/spyFall.png"> </a>
-					</div>
-				</div>
-			</div>
-
-			<div class="assignment">
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<a href="projects/markBookApp.html"> <img id="markBook" class="projectPic" src="img/marks_logo.png"> </a>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-
-		<div class="row">
-
-			<div class="assignment">
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<a href="projects/reversiGame.html"> <img id="reversiGame" class="projectPic" src="img/Reversi.png"> </a>
-					</div>
-				</div>
-			</div>
-
-			<div class="assignment">
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<a href="projects/mazeGame.html"> <img id="mazeGame" class="projectPic" src="img/mazeGame.png"> </a>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="assignment">
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<a href="projects/lineFollowingBot.html"> <img id="lineFollowingBot" class="projectPic" src="img/lineFollowingBot.png"> </a>
-					</div>
-				</div>
-			</div>
-
-
-
-		</div>
-
-		<div class="row">
-
-			<div class="assignment">
-				<div class="col-sm-4">
-					<div class="thumbnail"> </div>
-				</div>
-			</div>
-
-			<div class="assignment">
-				<div class="col-sm-4">
-					<div class="thumbnail">
-						<a href="projects/PongGame.html"> <img id="pongGame" class="projectPic" src="img/pongGame.png"> </a>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="assignment">
-				<div class="col-sm-4">
-					<div class="thumbnail"> </div>
-				</div>
-			</div>
-
-		</div>
-
-
-	</div>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+       <a href="#" onclick="moveToDiv('#about');" class="w3-bar-item w3-btn w3-hide-small">
+    <span class="w3-center w3-padding-large w3-black w3-hover-blue-grey w3-xlarge w3-wide w3-animate-opacity">
+         NIRMIT <span class="w3-hide-small">ZINZUWADIA</span>  </span> </a>
+  </div>
 </div>
 
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center"> - ABOUT ME - </h3>
+  <div class="w3-row">
+    <div class="w3-col w3-third w3-center w3-padding-large">
+      <img src="IMG/bio-me.jpg" class="w3-round w3-image" alt="Photo of Me" width="100%" height="333">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Nirmit Zinzuwadia</b></p>
+    </div>
 
-<div class="my_carousel">
-	<!-- Carousel Containter -->
-	<div class="carousel_container">
-		<div id="carousel"></div>
-		<img class="nextItem" src="img/arrow_left.png"/>
-		<img class="prevItem" src="img/arrow_right.png"/>
-	</div>
+    <!-- Hide this text on small devices -->
+    <div class="w3-col w3-twothird w3-hide-small">
+      <p class="w3-small"> I am a <b class="w3-text-blue-grey"> third-year </b> computer engineering student at the University of Toronto with a passion for technology.
+          I strive on challenges and enjoy solving critical engineering problems. <br><br>
+          Recently this summer, I worked at <b class="w3-text-blue-grey"> Indigo Books and Music Home Office </b> as a summer intern.
+          I worked as an iOS mobile developer and data scientist.
+          Previously, I have worked on a number of diverse topics throughout my projects from refactoring,
+          to bug fixing, to feature implementation, to performance. I enjoy creating personal projects to learn and
+          enlarge my knowledge in the field of technology. <br><br>
+          Currently, I am seeking <b class="w3-text-blue-grey"> full time 12-16 month PEY position </b> to apply my past experience assisting
+          company’s growth, mission, and passion.
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-code"></i>Programming</p>
+  <div class="w3-light-grey"> <div class="w3-container w3-padding-xsmall w3-text-white color1 w3-center" style="width:95%">C++</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-white color2 w3-center" style="width:90%">C</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-white color3 w3-center" style="width:85%">Java</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color4 w3-center" style="width:80%">NIOS II Assembly Language</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color5 w3-center" style="width:75%">Verilog</div> </div>
+  <div class="w3-light-grey">  <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color6 w3-center" style="width:65%">Objective C</div> </div>
 
-	<!-- Caption Container -->
-	<div class="caption_container">
-		<div id="captions"></div>
-	</div>
+  <p class="w3-wide"><i class="fa fa-html5"></i>Web Design</p>
+  <div class="w3-light-grey"> <div class="w3-container w3-padding-xsmall  w3-text-white color1 w3-center" style="width:96%">HTML</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-white color2 w3-center" style="width:93%">CSS</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color6 w3-center" style="width:55%">JQuery</div></div>
 
-	<img class="leaves" src="img/leaves.png"/>
+  <p class="w3-wide"><i class="fa fa-mobile"></i>App Development</p>
+  <div class="w3-light-grey"> <div class="w3-container w3-padding-xsmall w3-text-grey color5 w3-center" style="width:75%">Android</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color6 w3-center" style="width:50%">IOS</div> </div>
 
-	<!-- Carousel Data -->
-	<div class="carousel_data">
+  <p class="w3-wide"><i class="fa fa-file"></i>Professional Software</p>
+  <div class="w3-light-grey"> <div class="w3-container w3-padding-xsmall w3-text-white color1 w3-center" style="width:98%">Microsoft Office (Word, PowerPoint, Excel, Project, Access)</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-white color2 w3-center" style="width:90%">GitHub</div> </div>
+  <div class="w3-light-grey"> <div class="top-margin w3-container w3-padding-xsmall w3-text-grey color4 w3-center" style="width:70%">MATLAB</div> </div>
 
-		<!-- begin items -->
-
-		<div class="carousel_item">
-			<div class="image">
-				<img src="img/robotics.png"/>
-			</div>
-			<div class="caption">
-				<h2>Robotics   (2011 - 2015) </h2>
-				<p>
-					I joined robotics club (Team 188) during the start of my high school. It was one of my best clubs I joined so far. It was fun to build robots and moreover, it was educational. I learned to plan, design and formulate the end product in a timely manner. During these years, I participated in many competitions including Worlds Championship level in St. Louise.
-				</p>
-			</div>
-		</div>
-
-		<!-- Item -->
-		<div class="carousel_item">
-			<div class="image">
-				<img src="img/esp1.png" />
-			</div>
-			<div class="caption">
-				<h2>Pressure Control (2015)</h2>
-				<p>
-					As part of one of the courses in first year of university, my team and I had to figure out a way to avoid delivery of soggy food. I was the leader of the group and managed to initiate this idea. We ended up pitching this idea a final product. </p>
-				<br><h4>More Information about the design</h4>
-				<p>
-					The design consists of humidity sensor and heat sensor. The food is packaged into regular packaging system with holes on top to resolve the moisture issue. The container contains an open air filter cardboard on top that allow air to escape from the system. The container is programmed such that when the humidity sensors detects certain humidity level, top lids of the container open up to allow moisture to escape. It has a portable heating pan at the bottom. The heating pan is managed by the heat sensors that maintain the internal and surrounding temperature. This allows safe environment for system in the trunk of a car and food is not burned.
-				</p>
-
-
-			</div>
-		</div>
-
-		<!-- Item -->
-		<div class="carousel_item">
-			<div class="image">
-				<img src="img/esp2.png" />
-			</div>
-			<div class="caption">
-				<h2>The Chipmunk Village (2016)</h2>
-				<p>
-					As part of one of the courses in first year of university, my team and I had to figure out a way to meet the client's demand. Out client wanted to develop a Chipmunk Game that is entertaining for both Chipmunks and audience to watch. I lead the team and initiated the following idea. This is the end product of our engineering project. </p>
-				<br><h4>More Information about the design</h4>
-
-				<p>
-					Chipmunk Village is a game that is specifically built to allow domestic Chipmunks to play and grab food. The design includes three containers; each has certain tasks for Chipmunks to perform. The design enables the Chipmunks to go through certain obstacles and finally attain food. Container number one and three provide means of entrance/exit. The second container is closed from all sides and contains food for the Chipmunks. The design is made such that each container can only accommodate one Chipmunk in each container. The exterior frame is made of plexiglass which is durable and transparent, so it can allow users to watch Chipmunks play from all angles. The interior part of design contains a park with artificial grass. Each item is put in place with Velcro. This makes it easy for the user to take apart any items whenever needed. Also, it allows users to place new items in the game easily. The design contains pipeline to allow Chipmunks to go from one container to the other.
-				</p>
-
-			</div>
-		</div>
-
-		<div class="carousel_item">
-			<div class="image">
-				<img src="img/tennis_awards.png"  />
-			</div>
-			<div class="caption">
-				<h2>Tennis</h2>
-				<p>
-					One of my favourite sports is tennis. I was in highschool tennis team. I have played in many tournamnets and won few awards.
-				</p>
-
-			</div>
-		</div>
-
-
-		<div class="carousel_item">
-			<div class="image">
-				<img src="img/computer_award.png"  />
-			</div>
-			<div class="caption">
-				<h2>Computer Engineering Awards</h2>
-				<p>
-					My genuine interest towards engineering increased in Grade 11 as I started taking more technology related courses. As a result of my passion and true dedication, I won an award in computer engineering in Grade 11 and Grade 12.
-
-				</p>
-
-			</div>
-		</div>
-
-		<!-- end items -->
-
-	</div>
+  </div>
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xlarge w3-text-white w3-wide"><p class="w3-light-grey w3-padding-small">  PORTFOLIO </p></span>
+  </div>
 </div>
 
+<!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <h3 class="w3-center"> - EXPERIENCE -  </h3>
+    <div class="w3-col w3-half">
+      <a href="Job/indigo.html">
+        <img src="IMG/job_indigo.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid"> Indigo Books & Music </p>
+       <p> IOS app developer . Data Scientist </p>
+    </div>
+
+     <div class="w3-col w3-right w3-half">
+      <a href="Job/staples.html">
+        <img src="IMG/job_staple.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid"> Staples Business Depot </p>
+         <p> Technology Associate . Customer Service Representative </p>
+       <p> </p>
+    </div>
+  </div>
+  </div>
 
 
 
-<!-- ..............  Social Media Box ................ -->
-<div id = "socialMedia">
+<div class="w3-content w3-container" id="portfolio">
+  <h3 class="w3-center"> - PROJECTS - </h3>
+  <div class="w3-row w3-special w3-text-blue-grey w3-center">
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge"> <i class="fa fa-users" aria-hidden="true"></i> </span><br>
+    Group/ Pair Project
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge"><i class="fa fa-user" aria-hidden="true"></i></span><br>
+    Personal Project
+  </div>
 
-	<!-- <img class="title" src="img/connect.png"> <br>  -->
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge"><i class="fa fa-mobile" aria-hidden="true"></i></span><br>
+    App
+  </div>
 
-	<div class="socialIcon">
+</div> <br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+
+    <div class="w3-col m3">
+      <a href="Projects/maps.html">
+        <img src="IMG/cover_map.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid"> Maps  <i class="fa fa-users"></i> </p>
+       <p> Software program that provides functionality similar to Google Maps, plus some other features. </p>
+    </div>
+
+   <div class="w3-col m3">
+      <a href="Projects/assembly_maze.html">
+        <img src="IMG/cover_assembly_maze.jpg" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid">Maze - Assembly <i class="fa fa-users"></i> </p>
+       <p> A maze game which allows user to finish various stages using Altera's DE1-SoC board. </p>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="Projects/shoot.html">
+        <img src="IMG/cover_shoot.jpg" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid">Shoot <i class="fa fa-users"></i> </p>
+       <p> Game buit on Altera's DE1-SoC I, Cyclone V FPGA Board using a VGA adapter and a PS2 keyboard. </p>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="Projects/spyFall.html">
+        <img src="IMG/cover_spyFall.jpg" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+      </a>
+       <p class="w3-wide-mid">SpyFall <i class="fa fa-user"></i> <i class="fa fa-mobile"></i> </p>
+       <p> Modified version of the board game. Role of each user is delivered easily. </p>
+    </div>
+  </div>
 
 
-		<div class="social-buttons">
-			<a href="https://www.facebook.com/Niirmit" target="_blank" class="social-button"><i class="fa fa-facebook" title="Facebook"></i></a>
-			<a href="https://github.com/Nirmit-Zinzu" target="_blank" class="social-button"><i class="fa fa-github" title="GitHub"></i></a>
-			<a href="https://www.linkedin.com/in/nirmit-zinzuwadia" target="_blank" class="social-button"><i class="fa fa-linkedin" title="LinkedIn"></i></a>
-			<a href="https://www.youtube.com/channel/UCxERmm1eIxhQR1qecPYdXsQ" target="_blank" class="social-button"><i class="fa fa-youtube-play" title="YouTube"></i></i></a>
-			<a href="img/snapchat.png"  width="10px" height="10px" target="_blank" class="social-button"><i class="fa fa-snapchat" title="Snapchat"></i></a>
-			<a href="mailto:nirmit.001@gmail.com?Subject=Website%20" class="social-button"><i class="fa fa-envelope" title="E-mail"></i></a>
-		</div>
+  <div class="w3-row-padding w3-center w3-section">
+
+     <div class="w3-col m3">
+        <a href="Projects/markBook.html">
+          <img src="IMG/cover_markBook.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> GPA Calculator  <i class="fa fa-user"></i> <i class="fa fa-mobile"></i></p>
+        <p> An android app which allws user to store, modify, delete and view current/seasonal GPA.  </p>
+      </div>
+
+    <div class="w3-col m3">
+        <a href="Projects/reversi.html">
+          <img src="IMG/cover_reversi.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> Reversi </p>
+        <p> Logistics of the game, which allows user to play with a smart computer AI.  </p>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="Projects/line-following-robot.html">
+          <img src="IMG/cover_bot.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> Line Following Bot </p>
+        <p> An Arduino coded robot which follows a black line. </p>
+    </div>
+
+    <div class="w3-col m3">
+        <a href="Projects/mazeGame.html">
+          <img src="IMG/cover_maze.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> Graphical Maze </i></p>
+        <p> Graphical game -  Overcome various obstacles to complete the course. </p>
+    </div>
+
+    </div>
 
 
-	</div>
+  <div id="hide_projects" >
+    <div class="w3-row-padding w3-center w3-section">
+
+      <div class="w3-col m3">
+        <a href="Projects/pong.html">
+          <img src="IMG/cover_pong.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains">
+        </a>
+        <p class="w3-wide-mid"> Pong </p>
+        <p> Computer versus player game - Control the pallet using arrow keys to hit the ball.</p>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="w3-center w3-padding-32"> <button class="w3-center w3-button w3-padding-large w3-light-grey" id="show_more" >LOAD MORE</button> </div>
 </div>
 
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
 
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xlarge w3-text-white w3-wide"><p class="w3-light-grey w3-padding-small"> CONTACT </p></span>
+  </div>
+</div>
 
-<!-- Footer  -->
-<footer class="bye">
-	<div class="footer container-fluid">
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center"> - STAY CONNECTED - </h3>
 
-		<div class="row hidden-phone">
-			<div class="col-sm-2">
-				<div class="thumbnail endThumbnail"><img class="logo" src="img/logo.png" > </div>
-			</div>
+    <div class="w3-row w3-section">
+    <div class="w3-padding-16 w3-center">
+        <div class="w3-third"> <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Toronto, ON, Canada <br> </div>
+        <div class="w3-third"> <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> (647) 780 9249<br> </div>
+        <div class="w3-third"> <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+                <a href="mailto:nirmit.001@gmail.com?Subject=Website%20">nirmit.001@gmail.com </a> <br>
+        </div>
+    </div>
 
+      <div class="w3-padding-32 w3-center">
+          <div class="w3-section">
+                <a href="https://www.facebook.com/Niirmit" target="_blank"><i class="facebook fa fa-facebook fa-2x" title="Facebook"></i></a>
+          </div>
 
-			<div class="row col-sm-10">
-				<blockquote class="blockquote-reverse">
-					<p><i class="quote fa fa-quote-left fa-3x"></i>
-						Live as if you were to die tomorrow. Learn as if you were to live forever.
-						<i class="quote fa fa-quote-right" aria-hidden="true"></i>
-					</p>
-					<footer> Mahatma Gandhi</footer>
-				</blockquote>
+          <div class="w3-third w3-section">
+              <a href="https://github.com/Nirmit-Zinzu" target="_blank"><i class="github fa fa-github fa-2x" title="GitHub"></i></a>
+          </div>
 
-				<div class="madeBy"><p>  2016-17 | Web Designed by Nirmit Z. </p> </div>
-			</div>
+          <div class=" w3-third w3-section">
+              <a href="https://www.linkedin.com/in/nirmit-zinzuwadia" target="_blank"><i class="linkedIn fa fa-linkedin fa-2x" title="LinkedIn"></i></a>
+          </div>
 
+          <div class="w3-third w3-section">
+			<a href="https://www.youtube.com/channel/UCxERmm1eIxhQR1qecPYdXsQ" target="_blank"><i class="youTube fa fa-youtube-play fa-2x" title="YouTube"></i></a>
+          </div>
 
+          <div class="w3-third w3-section">
+          </div>
 
-		</div>
+          <div class="w3-third w3-section">
+			<a href="https://www.instagram.com/ninizinzu/" target="_blank"><i class="instagram fa fa-instagram fa-2x" title="Instagram"></i></a>
+          </div>
 
-	</div>
+      </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-32">
+    2016-17 | Nirmit Z. <br>
 </footer>
 
-<!-- Bootstrap extensions  -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/ffb3c03be5.js"></script>
+<script>
 
-<script type="text/javascript" src="jquery-1.6.min.js"></script>
-<script type="text/javascript" src="jquery.roundabout.js"></script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
 
-<!-- AutoScroll -->
-<script type="text/javascript" src = "autoScrollTo.js"> </script>
-<script type="text/javascript" src = "carousel.js"></script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+  <script type="text/javascript" src="JavaScript/jquery-1.6.min.js"></script>
+<script type="text/javascript" src = "JavaScript/indexScroll.js"></script>
 
 </body>
 </html>
-
