@@ -3,10 +3,10 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 
 body, html {
-    background-image: url('http://wallpapercave.com/wp/lWS9r8c.jpg');
     height: 100%;
     color: #777;
     line-height: 1.8;
+    background-color:#0F2226;
 }
 
 ::selection {
