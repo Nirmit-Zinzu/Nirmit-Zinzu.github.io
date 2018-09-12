@@ -4,12 +4,12 @@
 
 <head>
 
-    <title> Maps </title>
+    <title> OS/161 </title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="../IMG/cover_map.png">
+    <link rel="icon" href="../IMG/cover_os161.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,14 +48,43 @@
             <ul>
                  <li> Understood key operating system concepts, such as resource virtualization, protection and concurrency. </li>
                  <li> Implemented native locking mechanism such as lock, semaphore and CV to ensure synchronization. </li>
-                 <li> Wrote system calls such as fork(), waitpid(), execv() and sbrk() to implement processes and threads.</li>
                  <li> Formulated virtual memory subsystem by implementing the MIPS software managed
                       Translation Lookaside Buffer (TLB), paging, and page faults on Harvard's OS-161 kernel.
                  </li>
+                 <li> Wrote system calls such as fork(), waitpid(), execv() and sbrk() to implement processes and threads.</li>
             </ul>
         </p>
 
+    <div class="w3-padding-32 w3-container">
+        <table class="w3-table">
+            <tr class="w3-blue-grey">
+              <th class="w3-center">Sample Syscall Performance </th>
+            </tr>
+        </table>
     </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m6">
+           <img src="../IMG/os161_forktest.png" style="width:100%" alt="The mist over the mountains">
+           <p class="w3-wide-mid"> fork </p>
+           <p> Duplicates the running process with unique process id. Processes 0, 1, 2 & 3 are forked at various instances. </p>
+        </div>
+
+        <div class="w3-col m6">
+            <img src="../IMG/os161_sbrk.png" style="width:100%" alt="The mist over the mountains">
+            <p class="w3-wide-mid"> set break </p>
+            <p> Sets a process break (i.e. allocate memory). Dynamically changes the amount of space allocated for the data segment of the calling process. </p>
+        </div>
+
+        <div class="w3-col m6 w3-center">
+           <img src="../IMG/os161_wait.png" style="width:100%" alt="The mist over the mountains">
+           <p class="w3-wide-mid"> wait </p>
+           <p> Waits on a process. Allows a process to wait until one of its child processes change its state.
+               Correct sequence of letters are printed based on the implemented mechanism.  </p>
+        </div>
+
+    </div>
+
 </div>
 
 </body>
