@@ -4,7 +4,7 @@ body,h1,h2,h3,h4,h5,h6 {
 
 body, html {
     height: 100%;
-    color: #777;
+    color: #666;
     line-height: 1.8;
 }
 
@@ -24,7 +24,7 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("https://www.achuth.in/wp-content/uploads/2017/07/portfolio-header.jpg");
+    background-image: url("https://s3.amazonaws.com/american-rivers-website/wp-content/uploads/2016/02/22182202/career-header.jpg");
     min-height: 400px;
 }
 
