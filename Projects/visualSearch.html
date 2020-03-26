@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="../IMG/cover_myVibe.jpg">
+    <link rel="icon" href="../IMG/VisualSearch_logo.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,24 +39,58 @@
     <div class="w3-content w3-container">
          <p class="w3-wide"><i class="logo fa fa-language"></i><b class="bb"> LANGUAGE </b> Python, Java </p>
 
-         <p class="w3-wide"><i class="logo fa fa-calendar" ></i><b class="bb"> TIME </b> Capstone Project, Septmeber 2019 - Present </p>
+         <p class="w3-wide"><i class="logo fa fa-calendar" ></i><b class="bb"> TIME </b> Capstone Project, Septmeber 2019 - April 2020 </p>
 
          <p class="w3-wide"><i class="logo fa fa-info-circle" ></i><b class="bb"> DESCRIPTION </b> </p>
          <p>
             An android app which runs a neural network to return pictures of clothing items similar to a user-provided input.
 
+                <p>The growing ubiquity of e-commerce in the fashion industry has further emphasised the inherent
+                drawbacks with the traditional text-based search that drives many large e-commerce
+                conglomerates. Whether due to semantic ambiguity in text queries or misspelled words for
+                example, text-based search leaves much to be desired when it comes to a user attempting to
+                describe a clothing item using words. </p>
+
+                <p> As a result, our team designed a visual search application. The goal of our project is twofold: to
+                develop a deep learning framework that returns pictures of clothing items similar to a
+                user-provided image (Goal ML) and to develop a mobile application to showcase our design by
+                simulating an arbitrary fashion retailer (Goal App.).</p>
             <ul>
                 <li>
-                  The first goal: develop a deep learning framework that returns pictures of clothing items similar to a user-provided image.
-                    The general clothing categories that our model will consider include t-shirts, sweaters and hoodies, pants
-             and jeans, jackets, shirts and blouses, dresses and skirts, and shorts.
+                  Machine Learning Component (Goal ML):
+                    <br>  --> uses transfer learning through the Inception-ResNet-v2 network architecture and multi-task
+                          learning by utilizing the DeepFashion dataset
+                    <br>  --> cloud server hosts the model (FloydHub)
+                    <br>  --> returns images of clothing items similar to an input image and achieves at least 62% accuracy
                 </li>
-
                 <li>
-                  The second goal: develop a mobile application to showcase our design by simulating an arbitrary fashion retailer.
+                  Application Componenet (Goal App.):
+                    <br> --> user’s interface to the machine learning model and displays similar clothing items for a simulated fashion e-commerce retailer
+                    <br> --> allows the user to access product information of the returned similar results and achieves an application latency of 3.79 seconds
                 </li>
 
-                </br> </br> PROJECT WORK IN PROGRESS . . .
+                <div class="w3-padding-32 w3-row-padding w3-center">
+                    <div class="w3-col m4">
+                      <video width="100%"controls>
+                          <source src="../Videos/me_example.mp4" type="video/mp4">
+                      </video>
+                       <p class="bb w3-wide-mid">Sweater Search </p>
+                    </div>
+
+                   <div class="w3-col m4">
+                      <video width="100%"controls>
+                          <source src="../Videos/hoodie_example.mp4" type="video/mp4">
+                      </video>
+                       <p class="bb w3-wide-mid">Hoodie Image Search</p>
+                    </div>
+
+                    <div class="w3-col m4">
+                      <video width="100%"controls>
+                          <source src="../Videos/polkadot_example.mp4" type="video/mp4">
+                      </video>
+                       <p class="bb w3-wide-mid">Polkadot Dress Image Search</p>
+                    </div>
+              </div>
             </ul>
         </p>
         <br>
